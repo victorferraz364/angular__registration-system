@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { nutritionModule } from './freatures/nutrition.module/nutrition.module';
-import { NutritionPageComponent } from './freatures/nutrition.module/pages/nutrition.page/nutrition.page.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import { NutritionPageComponent } from './freatures/nutrition.module/pages/nutri
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    nutritionModule
+    nutritionModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
