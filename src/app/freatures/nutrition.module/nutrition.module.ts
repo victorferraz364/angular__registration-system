@@ -3,6 +3,7 @@ import { NutritionPageComponent } from './pages/nutrition.page/nutrition.page.co
 import { AngularMaterialModule } from "src/app/shared/angular-material/angular-material.module";
 import { FeedRecordTableComponent } from './pages/nutrition.page/components/feed-record-table/feed-record-table.component';
 
+
 @NgModule({
   imports: [
     AngularMaterialModule

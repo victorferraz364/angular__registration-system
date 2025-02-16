@@ -15,9 +15,11 @@
     flex-direction: column;
     gap: 8px;
 
-    li {
+    li a {
         line-height: 22px;
         color: #262626;
+        list-style: none;
+        text-decoration: none;
     }
 }
 

@@ -1,8 +1,9 @@
 import { NgModule } from "@angular/core";
 import { SideMenuComponent } from "./components/side-menu/side-menu.component";
+import { AppRoutingModule } from "../app-routing.module";
 
 @NgModule({
-    imports: [],
+    imports: [AppRoutingModule],
     exports:[SideMenuComponent],
     declarations:[SideMenuComponent]
 })
