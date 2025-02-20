@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class NutritionPageComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+
+  viewModeList = [
+    { value: 'tabela', viewValue: 'Tabela' },
+    { value: 'lista', viewValue: 'Lista' }
+  ];
+
+  viewMode: string = 'tabela'; 
+
+  atualizarModo(modo: string) {
+    this.viewMode = modo;
+  }
 }

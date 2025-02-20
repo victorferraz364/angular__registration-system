@@ -23,3 +23,16 @@
   .mat-expansion-panel-spacing {
     margin: 5px 0;
   }
+  .mat-mdc-header-row {
+   height: 0;
+   
+}
+.mat-typography {
+ margin: 100px;
+}
+.refeicao-title {
+  margin: 10px 0px;
+}
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
