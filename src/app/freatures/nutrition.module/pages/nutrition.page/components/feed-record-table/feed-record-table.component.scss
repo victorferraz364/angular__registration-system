@@ -2,13 +2,29 @@
     width: 50%;
     vertical-align: middle;
 }
+.mat-expansion-panel-header {
+
+}
 .mat-table .mat-column{
     vertical-align: middle;
 
+} 
+.mat-panel-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
+.mat-panel-title-infos {
+ 
+}
+.mat-panel-title-infos span{
+ font-style: italic;
+ font-size: 14px;
+}
+
 .mat-mdc-table .mat-mdc-header-cell, .mat-mdc-cell {
     vertical-align: middle;
-    
+    background-color: #ffffff;
 }
 .mat-mdc-row:hover {
     background-color: aqua;
@@ -24,7 +40,7 @@
     margin: 5px 0;
   }
   .mat-mdc-header-row {
-   height: 0;
+  
    
 }
 .mat-typography {

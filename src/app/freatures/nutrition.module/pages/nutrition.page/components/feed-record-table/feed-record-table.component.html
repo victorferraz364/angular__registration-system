@@ -1,8 +1,5 @@
 <!-- Select de modo de visualização -->
-<universal-select
-  [label]="'Modo de Visualização'"
-  [options]="modosVisualizacao"
-  (valueChange)="atualizarModo($event)">
+<universal-select [label]="'Modo de Visualização'" [options]="modosVisualizacao" (valueChange)="atualizarModo($event)">
 </universal-select>
 
 <!-- Tabela Completa de Alimentos -->
@@ -35,13 +32,21 @@
 
 <mat-accordion *ngIf="modoVisualizacao === 'separado'" multi>
   <mat-expansion-panel [expanded]="true" *ngFor="let refeicao of refeicoes">
-    <mat-expansion-panel-header >
-      <mat-panel-title>
-       {{ refeicao.nome}}
+    <mat-expansion-panel-header>
+      <mat-panel-title class="mat-panel-title">
+
+        <div>
+          {{ refeicao.nome }}
+        </div>
+
+        <div class="mat-panel-title-infos">
+          <span>total de calorias</span>0
+        </div>
+
       </mat-panel-title>
     </mat-expansion-panel-header>
 
-    <table mat-table [dataSource]="refeicao.alimentos"  class="mat-elevation-z8">
+    <table mat-table [dataSource]="refeicao.alimentos" class="mat-elevation-z8">
 
       <ng-container matColumnDef="alimento">
         <th mat-header-cell *matHeaderCellDef> Alimento </th>

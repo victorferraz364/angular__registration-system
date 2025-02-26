@@ -1,26 +1,27 @@
-<div class="container-sidebar">
-    <ul class="sidebar-itens">
+<nav class="sidebar">
 
-        <div class="item">
-            <span class="material-symbols-outlined">home</span>
-            <li>Visão geral</li>
-        </div>
-        <div class="item">
-            <span class="material-symbols-outlined">fork_spoon</span>
-            <li><a routerLink="/nutrition">Nutrição</a></li>
-        </div>
-        <div class="item">
-            <a routerLink="/training">
-                <span class="material-symbols-outlined">fitness_center</span>
-                <li>Treinos</li>
-            </a>
-          
-        </div>
-        <div class="item">
-            <span class="material-symbols-outlined">book</span>
-            <li>Estudos</li>
-        </div>
+    <ul class="sidebar-items">
         
-    </ul>
-</div>
+        <li class="sidebar-item">
+            <a routerLink="/training">
+                <i class="fi fi-rr-gym"></i>
+                <!--<span>Treinos</span> -->
+            </a>
+        </li>
 
+        <li class="sidebar-item">
+            <a routerLink="/nutrition">
+                <i class="fi fi-rr-restaurant"></i>
+                  <!-- <span>Nutrição</span> -->
+            </a>
+        </li>
+
+        <li class="sidebar-item">
+            <a routerLink="/studies">
+                <i class="fi fi-rr-graduation-cap"></i>
+                   <!--<span>Estudos</span>-->
+            </a>
+        </li>
+    </ul>
+
+</nav>

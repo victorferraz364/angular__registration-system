@@ -8,7 +8,9 @@ import { ELEMENTDATA } from '../../constants/ELEMENT-DATA';
 })
 export class FeedRecordTableComponent {
 
-  refeicoes = [
+ 
+
+   refeicoes = [
     { nome: 'Café da manhã', alimentos: [
       { alimento: 'Ovo', quantidade: '2 unidades', calorias: 150, datahora: new Date() },
       { alimento: 'Pão', quantidade: '1 unidade', calorias: 100, datahora: new Date() }
@@ -22,10 +24,16 @@ export class FeedRecordTableComponent {
       { alimento: 'Frango', quantidade: '150g', calorias: 200, datahora: new Date() }
     ]},
     { nome: 'Lanches', alimentos: [
-      { alimento: 'Maçã', quantidade: '1 unidade', calorias: 52, datahora: new Date() }
+      { alimento: 'Maçã', quantidade: '1 unidade', calorias: 193, datahora: new Date() }
     ]}
   ];
 
+  
+   
+ 
+
+  
+  
   // Unifica todos os alimentos em um único array
   alimentosUnificados = this.refeicoes.flatMap(refeicao => refeicao.alimentos);
 
@@ -39,4 +47,7 @@ export class FeedRecordTableComponent {
   atualizarModo(modo: string) {
     this.modoVisualizacao = modo;
   }
+
+
+  totalKcalRefeicao = 100;
 }
