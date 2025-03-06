@@ -4,6 +4,8 @@ import { AngularMaterialModule } from "src/app/shared/angular-material/angular-m
 import { FeedRecordTableComponent } from './pages/nutrition.page/components/feed-record-table/feed-record-table.component';
 import { CommonModule, DatePipe } from "@angular/common";
 import { UtilsModule } from "src/app/shared/utils/utils.module";
+import { HeaderGlobalComponent } from "src/app/core/components/header-global/header-global.component";
+import { CoreModule } from "src/app/core/core.module";
 
 
 
@@ -12,7 +14,8 @@ import { UtilsModule } from "src/app/shared/utils/utils.module";
     AngularMaterialModule,
     DatePipe,
     UtilsModule,
-    CommonModule
+    CommonModule,
+    CoreModule
   ],
   exports: [
     NutritionPageComponent

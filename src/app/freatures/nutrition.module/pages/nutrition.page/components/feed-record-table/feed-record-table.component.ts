@@ -28,12 +28,7 @@ export class FeedRecordTableComponent {
     ]}
   ];
 
-  
-   
- 
 
-  
-  
   // Unifica todos os alimentos em um único array
   alimentosUnificados = this.refeicoes.flatMap(refeicao => refeicao.alimentos);
 
