@@ -6,6 +6,7 @@ import { CommonModule, DatePipe } from "@angular/common";
 import { UtilsModule } from "src/app/shared/utils/utils.module";
 import { HeaderGlobalComponent } from "src/app/core/components/header-global/header-global.component";
 import { CoreModule } from "src/app/core/core.module";
+import { chartsModule } from "src/app/shared/charts/charts.module";
 
 
 
@@ -15,7 +16,8 @@ import { CoreModule } from "src/app/core/core.module";
     DatePipe,
     UtilsModule,
     CommonModule,
-    CoreModule
+    CoreModule,
+    chartsModule
   ],
   exports: [
     NutritionPageComponent

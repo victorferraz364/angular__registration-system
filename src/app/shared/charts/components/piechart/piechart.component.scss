@@ -1,0 +1,35 @@
+.container {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+::ng-deep {
+
+    app-piechart .ngx-charts .pie-grid .pie-grid-item,
+    app-piechart ngx-charts-pie-grid,
+    app-piechart .ngx-charts-outer,
+    app-piechart div.ngx-charts-outer,
+    app-piechart svg.ngx-charts {
+        width: 80px !important;
+        height: 98px !important;
+        display: flex;
+    }
+
+    app-piechart .ngx-charts .pie-grid .pie-grid-item {
+        transform: translate(20px, 22px);
+    }
+
+    text.percent-label,
+    text.ng-star-inserted {
+        font-size: 30px;
+        color: red;
+    }
+
+    text.percent-label {
+        display: flex !important;
+    }
+
+    text.ng-star-inserted {
+        display: none;
+    }
+}

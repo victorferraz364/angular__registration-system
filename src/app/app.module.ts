@@ -5,13 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { nutritionModule } from './freatures/nutrition.module/nutrition.module';
-import { TrainingModuleComponent } from './freatures/training.module/training.module.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TrainingModuleComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
