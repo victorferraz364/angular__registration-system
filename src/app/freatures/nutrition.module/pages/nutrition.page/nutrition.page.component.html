@@ -1,10 +1,20 @@
 <div class="container">
     <div class="container__header">
 
-        <header-global></header-global>
-        <header-global></header-global>
-        <header-global></header-global>
-        <bar-chart></bar-chart>
+      <app-card-infos 
+      [title]="'Alimentação 2'"
+      [value]="2400"
+      [unit]="'kcal'"
+      [goal]="'2100'"
+      [chartType]="'bar'">
+    </app-card-infos>
+      
+      <app-card-infos 
+      [chartType]="'pie'"
+      [title]="'água'"
+      >
+    </app-card-infos>
+        
     </div>
     <div class="container-table">
 

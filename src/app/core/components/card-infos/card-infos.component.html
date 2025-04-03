@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-header">
+        <h5>{{title}}</h5>
+    </div>
+
+    <div class="card-body-info" *ngIf="value !== undefined">
+        <h1 class="calories">{{ value }}</h1> 
+        <span class="unit">{{ unit }}</span>
+    </div>
+
+    <div class="chart-container">
+        
+        <bar-chart  *ngIf="chartType === 'bar'"></bar-chart>
+        <app-piechart  *ngIf="chartType === 'pie'"></app-piechart>
+
+   
+
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="goal">
+        <span>Meta diária: <strong>2100 kcal</strong></span>
+    </div>
+</div>
